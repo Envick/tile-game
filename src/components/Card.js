@@ -2,9 +2,7 @@ import React from 'react'
 
 export const Card = ({ card, flipped, clickHandler, rightFlipped }) => (
   <div
-    className={`card ${flipped || rightFlipped ? 'flipped' : ''} ${
-      rightFlipped ? 'hide' : ''
-    }`}
+    className={`card ${flipped || rightFlipped ? 'flipped' : ''} `}
     key={card.id}
     onClick={clickHandler}
     style={{ order: card.pos }}
